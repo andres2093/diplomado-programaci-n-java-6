@@ -7,6 +7,11 @@ public class Primitivos {
         maxByte++;
         System.out.println("maxByte " + maxByte);
 
+        byte minByte = Byte.MIN_VALUE;
+        System.out.println("minByte " + minByte);
+        minByte++;
+        System.out.println("minByte " + minByte);
+
         int maxInt = Integer.MAX_VALUE;
         System.out.println("maxInt " + maxInt);
         maxInt++;
