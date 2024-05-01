@@ -13,5 +13,11 @@ public class E2 {
         System.out.println("Auto 1: " + automovil);
         System.out.println("Auto 2: " + automovil2);
         System.out.println("Auto 3: " + automovil3);
+
+//      Print con If ternario
+        System.out.println(automovil.equals(automovil2) ? "Es igual" : "No es igual");
+
+//       Asignación con If ternario
+        int prueba = automovil == automovil2 ? 1 : 0;
     }
 }
