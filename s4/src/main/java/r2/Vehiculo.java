@@ -1,7 +1,28 @@
 package r2;
 
+import java.util.Arrays;
+
 public class Vehiculo {
     private Llanta[] llantas = new Llanta[4];
+
+    public Vehiculo() {
+    }
+
+    public Vehiculo(Combustible combustible) {
+        this.combustible = combustible;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Vehiculo vehiculo = (Vehiculo) obj;
+
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        if (!Arrays.equals(llantas, vehiculo.llantas)) return false;
+        return combustible.equals(vehiculo.combustible);
+    }
 
     private Combustible combustible = new Combustible();
 
